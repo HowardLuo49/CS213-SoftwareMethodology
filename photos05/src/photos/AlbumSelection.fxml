@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="photos.AlbumSelectionController">
+   <children>
+      <AnchorPane>
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="803.0">
+               <children>
+                  <Label layoutX="55.0" layoutY="15.0" prefHeight="65.0" prefWidth="184.0" text="Albums">
+                     <font>
+                        <Font size="44.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="73.0" layoutY="404.0" prefHeight="36.0" prefWidth="121.0" text="Album Name:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="createInput" layoutX="200.0" layoutY="404.0" prefHeight="36.0" prefWidth="227.0" visible="false" />
+                  <Button fx:id="logoutButton" layoutX="676.0" layoutY="505.0" mnemonicParsing="false" onAction="#logout" prefHeight="44.0" prefWidth="95.0" text="Logout">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <ListView fx:id="albumList" layoutX="25.0" layoutY="85.0" prefHeight="297.0" prefWidth="487.0" />
+                  <Button fx:id="createButton" layoutX="620.0" layoutY="100.0" mnemonicParsing="false" onAction="#createAlbum" prefHeight="44.0" prefWidth="128.0" text="Create Album">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deleteButton" layoutX="620.0" layoutY="164.0" mnemonicParsing="false" onAction="#deleteAlbum" prefHeight="44.0" prefWidth="128.0" text="Delete Album">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="dateL" layoutX="82.0" layoutY="476.0" prefHeight="36.0" prefWidth="112.0" text="Date Range:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numPhotosL" layoutX="25.0" layoutY="440.0" prefHeight="36.0" prefWidth="169.0" text="Number of Photos:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="renameInput" layoutX="200.0" layoutY="404.0" prefHeight="36.0" prefWidth="227.0" visible="false" />
+                  <Button fx:id="renameButton" layoutX="620.0" layoutY="232.0" mnemonicParsing="false" onAction="#renameAlbum" prefHeight="44.0" prefWidth="128.0" text="Rename Album">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="openButton" layoutX="620.0" layoutY="295.0" mnemonicParsing="false" onAction="#openAlbum" prefHeight="44.0" prefWidth="128.0" text="Open Album">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="searchButton" layoutX="620.0" layoutY="360.0" mnemonicParsing="false" onAction="#search" prefHeight="44.0" prefWidth="128.0" text="Search">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="selectPhotoL" layoutX="200.0" layoutY="440.0" prefHeight="36.0" prefWidth="169.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="selectDateL" layoutX="200.0" layoutY="476.0" prefHeight="36.0" prefWidth="313.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="selectNameL" layoutX="200.0" layoutY="404.0" prefHeight="36.0" prefWidth="313.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="createConfButton" layoutX="444.0" layoutY="404.0" mnemonicParsing="false" onAction="#confirmCreate" prefHeight="36.0" prefWidth="95.0" text="Create" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="renameConfButton" layoutX="444.0" layoutY="404.0" mnemonicParsing="false" onAction="#confirmRename" prefHeight="36.0" prefWidth="95.0" text="Rename" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
